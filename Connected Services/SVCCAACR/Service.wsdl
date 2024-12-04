@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="Service" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://190.171.26.103:8080/BPCAACR/Service.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://190.171.26.103:8080/BPCAACR/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://190.171.26.103:8080/BPCAACR/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BUSINESS_PARTNER" />
+      <xsd:import schemaLocation="http://190.171.26.103:8080/BPCAACR/Service.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/SCG.LS.Service.DataContracts.Types" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IBusinessPartnerService_AgremiadoXCarnet_InputMessage">
+    <wsdl:part name="parameters" element="tns:AgremiadoXCarnet" />
+  </wsdl:message>
+  <wsdl:message name="IBusinessPartnerService_AgremiadoXCarnet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AgremiadoXCarnetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBusinessPartnerService_AgremiadoXCedula_InputMessage">
+    <wsdl:part name="parameters" element="tns:AgremiadoXCedula" />
+  </wsdl:message>
+  <wsdl:message name="IBusinessPartnerService_AgremiadoXCedula_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AgremiadoXCedulaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBusinessPartnerService_TotalBusinessPartners_InputMessage">
+    <wsdl:part name="parameters" element="tns:TotalBusinessPartners" />
+  </wsdl:message>
+  <wsdl:message name="IBusinessPartnerService_TotalBusinessPartners_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TotalBusinessPartnersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBusinessPartnerService_ActiveBusinessPartners_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveBusinessPartners" />
+  </wsdl:message>
+  <wsdl:message name="IBusinessPartnerService_ActiveBusinessPartners_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActiveBusinessPartnersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBusinessPartnerService_ActualizarFechaCarnet_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarFechaCarnet" />
+  </wsdl:message>
+  <wsdl:message name="IBusinessPartnerService_ActualizarFechaCarnet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarFechaCarnetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBusinessPartnerService_VaciarTablaTemporal_InputMessage">
+    <wsdl:part name="parameters" element="tns:VaciarTablaTemporal" />
+  </wsdl:message>
+  <wsdl:message name="IBusinessPartnerService_VaciarTablaTemporal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VaciarTablaTemporalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBusinessPartnerService_AgremiadoXNombre_InputMessage">
+    <wsdl:part name="parameters" element="tns:AgremiadoXNombre" />
+  </wsdl:message>
+  <wsdl:message name="IBusinessPartnerService_AgremiadoXNombre_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AgremiadoXNombreResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IBusinessPartnerService">
+    <wsdl:operation name="AgremiadoXCarnet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBusinessPartnerService/AgremiadoXCarnet" message="tns:IBusinessPartnerService_AgremiadoXCarnet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBusinessPartnerService/AgremiadoXCarnetResponse" message="tns:IBusinessPartnerService_AgremiadoXCarnet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AgremiadoXCedula">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBusinessPartnerService/AgremiadoXCedula" message="tns:IBusinessPartnerService_AgremiadoXCedula_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBusinessPartnerService/AgremiadoXCedulaResponse" message="tns:IBusinessPartnerService_AgremiadoXCedula_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TotalBusinessPartners">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBusinessPartnerService/TotalBusinessPartners" message="tns:IBusinessPartnerService_TotalBusinessPartners_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBusinessPartnerService/TotalBusinessPartnersResponse" message="tns:IBusinessPartnerService_TotalBusinessPartners_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActiveBusinessPartners">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBusinessPartnerService/ActiveBusinessPartners" message="tns:IBusinessPartnerService_ActiveBusinessPartners_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBusinessPartnerService/ActiveBusinessPartnersResponse" message="tns:IBusinessPartnerService_ActiveBusinessPartners_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarFechaCarnet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBusinessPartnerService/ActualizarFechaCarnet" message="tns:IBusinessPartnerService_ActualizarFechaCarnet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBusinessPartnerService/ActualizarFechaCarnetResponse" message="tns:IBusinessPartnerService_ActualizarFechaCarnet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VaciarTablaTemporal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBusinessPartnerService/VaciarTablaTemporal" message="tns:IBusinessPartnerService_VaciarTablaTemporal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBusinessPartnerService/VaciarTablaTemporalResponse" message="tns:IBusinessPartnerService_VaciarTablaTemporal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AgremiadoXNombre">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBusinessPartnerService/AgremiadoXNombre" message="tns:IBusinessPartnerService_AgremiadoXNombre_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBusinessPartnerService/AgremiadoXNombreResponse" message="tns:IBusinessPartnerService_AgremiadoXNombre_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IBusinessPartnerService" type="tns:IBusinessPartnerService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AgremiadoXCarnet">
+      <soap:operation soapAction="http://tempuri.org/IBusinessPartnerService/AgremiadoXCarnet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgremiadoXCedula">
+      <soap:operation soapAction="http://tempuri.org/IBusinessPartnerService/AgremiadoXCedula" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TotalBusinessPartners">
+      <soap:operation soapAction="http://tempuri.org/IBusinessPartnerService/TotalBusinessPartners" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActiveBusinessPartners">
+      <soap:operation soapAction="http://tempuri.org/IBusinessPartnerService/ActiveBusinessPartners" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarFechaCarnet">
+      <soap:operation soapAction="http://tempuri.org/IBusinessPartnerService/ActualizarFechaCarnet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VaciarTablaTemporal">
+      <soap:operation soapAction="http://tempuri.org/IBusinessPartnerService/VaciarTablaTemporal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgremiadoXNombre">
+      <soap:operation soapAction="http://tempuri.org/IBusinessPartnerService/AgremiadoXNombre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="BasicHttpBinding_IBusinessPartnerService" binding="tns:BasicHttpBinding_IBusinessPartnerService">
+      <soap:address location="http://190.171.26.103:8080/BPCAACR/Service.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,14 @@
+C:\Users\jhernandez\source\repos\FechasCarnets\bin\Release\FechasCarnets.exe.config
+C:\Users\jhernandez\source\repos\FechasCarnets\bin\Release\FechasCarnets.exe.manifest
+C:\Users\jhernandez\source\repos\FechasCarnets\bin\Release\FechasCarnets.application
+C:\Users\jhernandez\source\repos\FechasCarnets\bin\Release\FechasCarnets.exe
+C:\Users\jhernandez\source\repos\FechasCarnets\bin\Release\FechasCarnets.pdb
+C:\Users\jhernandez\source\repos\FechasCarnets\obj\Release\FechasCarnets.csproj.AssemblyReference.cache
+C:\Users\jhernandez\source\repos\FechasCarnets\obj\Release\FechasCarnets.Form1.resources
+C:\Users\jhernandez\source\repos\FechasCarnets\obj\Release\FechasCarnets.Properties.Resources.resources
+C:\Users\jhernandez\source\repos\FechasCarnets\obj\Release\FechasCarnets.csproj.GenerateResource.cache
+C:\Users\jhernandez\source\repos\FechasCarnets\obj\Release\FechasCarnets.csproj.CoreCompileInputs.cache
+C:\Users\jhernandez\source\repos\FechasCarnets\obj\Release\FechasCarnets.exe.manifest
+C:\Users\jhernandez\source\repos\FechasCarnets\obj\Release\FechasCarnets.application
+C:\Users\jhernandez\source\repos\FechasCarnets\obj\Release\FechasCarnets.exe
+C:\Users\jhernandez\source\repos\FechasCarnets\obj\Release\FechasCarnets.pdb

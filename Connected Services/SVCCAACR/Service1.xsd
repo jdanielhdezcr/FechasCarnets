@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://190.171.26.103:8080/BPCAACR/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BUSINESS_PARTNER" />
+  <xs:element name="AgremiadoXCarnet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/BUSINESS_PARTNER" minOccurs="0" name="authentication" nillable="true" type="q1:WebAuthentication" />
+        <xs:element minOccurs="0" name="cardCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AgremiadoXCarnetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/BUSINESS_PARTNER" minOccurs="0" name="AgremiadoXCarnetResult" nillable="true" type="q2:ObtenerAgremiadoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AgremiadoXCedula">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/BUSINESS_PARTNER" minOccurs="0" name="authentication" nillable="true" type="q3:WebAuthentication" />
+        <xs:element minOccurs="0" name="RFC" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AgremiadoXCedulaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/BUSINESS_PARTNER" minOccurs="0" name="AgremiadoXCedulaResult" nillable="true" type="q4:ObtenerAgremiadoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TotalBusinessPartners">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/BUSINESS_PARTNER" minOccurs="0" name="authentication" nillable="true" type="q5:WebAuthentication" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TotalBusinessPartnersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/BUSINESS_PARTNER" minOccurs="0" name="TotalBusinessPartnersResult" nillable="true" type="q6:ObtenerAgremiadoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveBusinessPartners">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/BUSINESS_PARTNER" minOccurs="0" name="authentication" nillable="true" type="q7:WebAuthentication" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActiveBusinessPartnersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/BUSINESS_PARTNER" minOccurs="0" name="ActiveBusinessPartnersResult" nillable="true" type="q8:ObtenerAgremiadoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActualizarFechaCarnet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/BUSINESS_PARTNER" minOccurs="0" name="authentication" nillable="true" type="q9:WebAuthentication" />
+        <xs:element minOccurs="0" name="cardCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="emisionCarnet" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="VencimientoCarnet" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActualizarFechaCarnetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/BUSINESS_PARTNER" minOccurs="0" name="ActualizarFechaCarnetResult" nillable="true" type="q10:ObtenerAgremiadoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VaciarTablaTemporal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/BUSINESS_PARTNER" minOccurs="0" name="authentication" nillable="true" type="q11:WebAuthentication" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VaciarTablaTemporalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/BUSINESS_PARTNER" minOccurs="0" name="VaciarTablaTemporalResult" nillable="true" type="q12:ObtenerAgremiadoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AgremiadoXNombre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/BUSINESS_PARTNER" minOccurs="0" name="authentication" nillable="true" type="q13:WebAuthentication" />
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ap1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ap2" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AgremiadoXNombreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/BUSINESS_PARTNER" minOccurs="0" name="AgremiadoXNombreResult" nillable="true" type="q14:GetLawyerResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

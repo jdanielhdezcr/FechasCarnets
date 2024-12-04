@@ -1,0 +1,10 @@
+C:\Users\jhernandez\source\repos\FechasCarnets\bin\Debug\FechasCarnets.exe.config
+C:\Users\jhernandez\source\repos\FechasCarnets\bin\Debug\FechasCarnets.exe
+C:\Users\jhernandez\source\repos\FechasCarnets\bin\Debug\FechasCarnets.pdb
+C:\Users\jhernandez\source\repos\FechasCarnets\obj\Debug\FechasCarnets.csproj.AssemblyReference.cache
+C:\Users\jhernandez\source\repos\FechasCarnets\obj\Debug\FechasCarnets.Properties.Resources.resources
+C:\Users\jhernandez\source\repos\FechasCarnets\obj\Debug\FechasCarnets.csproj.GenerateResource.cache
+C:\Users\jhernandez\source\repos\FechasCarnets\obj\Debug\FechasCarnets.csproj.CoreCompileInputs.cache
+C:\Users\jhernandez\source\repos\FechasCarnets\obj\Debug\FechasCarnets.exe
+C:\Users\jhernandez\source\repos\FechasCarnets\obj\Debug\FechasCarnets.pdb
+C:\Users\jhernandez\source\repos\FechasCarnets\obj\Debug\FechasCarnets.Form1.resources

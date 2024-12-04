@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SCG.LS.Service.DataContracts.Types" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SCG.LS.Service.DataContracts.Types" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="BusinessPartner">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActiveBP" type="xs:int" />
+      <xs:element minOccurs="0" name="Age" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="BPAddress" nillable="true" type="tns:BPAddress" />
+      <xs:element minOccurs="0" name="CardCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cellular" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cellular1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cellular2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DateOfBirth" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DateOfBirthJSON" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DeathDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DeathDateJSON" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmisionCarnet" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Fax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IncorporationDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IncorporationDateJSON" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsupToDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NotificationMail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OfficeFax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OfficePhone1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OfficePhone2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProfessionalStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Properties" nillable="true" type="tns:Properties" />
+      <xs:element minOccurs="0" name="PublicMail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RFC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Saldo" type="xs:int" />
+      <xs:element minOccurs="0" name="SchoolMail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Surname1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Surname2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TotalBP" type="xs:int" />
+      <xs:element minOccurs="0" name="TypeSuspension" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VencimientoCarnet" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BusinessPartner" nillable="true" type="tns:BusinessPartner" />
+  <xs:complexType name="BPAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="tns:ArrayOfAddress" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BPAddress" nillable="true" type="tns:BPAddress" />
+  <xs:complexType name="ArrayOfAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Address" nillable="true" type="tns:Address" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAddress" nillable="true" type="tns:ArrayOfAddress" />
+  <xs:complexType name="Address">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="County" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExactAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Province" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Site" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TypeOfAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Address" nillable="true" type="tns:Address" />
+  <xs:complexType name="Properties">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="QryGroup1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QryGroup64" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Properties" nillable="true" type="tns:Properties" />
+  <xs:complexType name="ArrayOfBusinessPartner">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BusinessPartner" nillable="true" type="tns:BusinessPartner" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBusinessPartner" nillable="true" type="tns:ArrayOfBusinessPartner" />
+</xs:schema>
